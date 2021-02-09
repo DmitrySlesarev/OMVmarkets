@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMV Markets Info</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color:#B4EBC3;
+        }
+        h1, h3 {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        p {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        ul {
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        .colortext {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1> Verification of smartphones </h1>
+<ul>
+    <li> <a> MMS </a> </li>
+</ul>
+<h3>Engineer should verify if Activate default EPS bearer context request has been received.</h3>
+<p>
+    <br/>00:00:00.000 [0xB0E3]<span class="colortext">LTE NAS ESM Plain OTA Outgoing Message</span>
+    <br/>pkt_version = 1 (0x1)
+    <br/>rel_number = 9 (0x9)
+    <br/>rel_version_major = 5 (0x5)
+    <br/>rel_version_minor = 0 (0x0)
+    <br/>eps_bearer_id_or_skip_id = 0 (0x0)
+    <br/>prot_disc = 2 (0x2)(EPS session mangement messages)</span>
+    <br/>trans_id = 24 (0x18)
+    <br/>msg_type = 208 (0xd0)<span class="colortext">(PDN connectivity request)</span>
+    <br/>let_esm_msg
+    <br/>pdn_connectivity_req
+    <br/>pdn_type = 1 (0x1) (Ipv4)
+    <br/>req_type = 1 (0x1) (initial request)
+    <br/>info_trans_flag_incl = 0 (0x0)
+    <br/>access_pt_name_incl = 1 (0x1)
+    <br/>access_pt_name_
+    <br/>conf_options[1]
+    <br/>
+    <br/>num_acc_pt_val = 30 (0x1e)
+    <br/>acc_pt_name_val[0] = 3 (0x3) (length)
+    <br/>acc_pt_name_val[1] = 109 (0x6d) <span class="colortext"> (m) </span>
+    <br/>acc_pt_name_val[2] = 109 (0x6d) <span class="colortext"> (m) </span>
+    <br/>acc_pt_name_val[3] = 115 (0x73) <span class="colortext"> (s) </span>
+</p>
+    <h3> The DUT should get from network the following message:</h3>
+<p>
+    <br/> 00:00:00.000 [0xB0E2]<span class="colortext">LTE NAS ESM Plain OTA Incoming Message</span>
+    <br/>pkt_version = 1 (0x1)
+    <br/>rel_number = 9 (0x9)
+    <br/>rel_version_major = 5 (0x5)
+    <br/>rel_version_minor = 0 (0x0)
+    <br/>eps_bearer_id_or_skip_id = 6 (0x6)
+    <br/>prot_disc = 2 (0x2) (EPS session management messages)
+    <br/>trans_id = 24 (0x18)
+    <br/>msg_type = 193 (0xc1) (Activate default EPS bearer context request)
+    <br/>let_esm_msg
+    <br/>act_def_eps_bearer_context_req
+    <br/>eps_qos
+    <br/>qci = 7 (0x7) (QC7)
+</p>
+
+</body>
+</html>
